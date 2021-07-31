@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+}
+
+.app {
+  background-color: #c5e4e7;
+
+  @media screen and (min-width: 412px) {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #c5e4e7;
+  }
+}
+
+.app-heading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: #416466;
+  letter-spacing: 6px;
+}
+
+.container {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 25px;
+  @media screen and (min-width: 412px) {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+}
+
+.calculation {
+  @media screen and (min-width: 412px) {
+    width: 360px;
+    margin: 0 1rem 0 0;
+  }
+}
+
+.section {
+  margin: 0 0 2.5rem 0;
+}
+
+.input-label {
+  margin: 0 0 0.75rem 0;
+}
+
+.section label {
+  color: #657477;
+  font-weight: bold;
+}
+
+.section input {
+  background: #f3f8fb;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0;
+  outline: 0;
+  border: none;
+  text-align: right;
+  color: #00474b;
+  font-weight: bold;
+  font-size: 24px;
+  outline: 2px solid transparent;
+
+  @media screen and (min-width: 412px) {
+    padding: 0.5rem;
+  }
+
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container > img {
+  position: absolute;
+  top: 14px;
+  left: 1rem;
+}
+
+.selection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+
+  @media screen and (min-width: 412px) {
+    grid-template-columns: repeat(3, 110px);
+    // grid-gap: 10px;
+  }
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  margin: 0 0 10px 0;
+  border: none;
+  background-color: #00474b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 6px;
+
+  @media screen and (min-width: 412px) {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+}
+
+.custom-button {
+  background-color: #f3f8fb;
+  color: #546e6d;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bill-input {
+  &:focus {
+    outline-color: #00474b;
+  }
+}
+
+.rows {
+  background-color: #00474b;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  @media screen and (min-width: 412px) {
+    width: 420px;
+    height: 420px;
+    margin: 0 0 0 1rem;
+    padding: 2rem;
+  }
+}
+
+.field-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.heading {
+  font-weight: bold;
+}
+.sub-heading {
+  color: #657477;
+}
+
+.result {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #30bdac;
+}
+
+.reset-button {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  background-color: #26c2ad;
+  color: #00474b;
+  font-size: 1.2rem;
+  margin: 1rem 0 0 0;
+
+  @media screen and (min-width: 412px) {
+    margin: 8rem 0 0 0;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/index.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-heading">
+        <div>SPLI</div>
+        <div>TTER</div>
+      </div>
+      <section class="container">
+        <div class="calculation">
+          <div class="section">
+            <div class="input-label"><label for="bill">Bill</label></div>
+            <div class="input-container">
+              <img src="./images/icon-dollar.svg" />
+              <input type="number" name="bill" class="bill-input" />
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="input-label">
+              <label for="bill">Select Tip %</label>
+            </div>
+            <div class="selection">
+              <button class="button">5%</button>
+              <button class="button">10%</button>
+              <button class="button">15%</button>
+              <button class="button">25%</button>
+              <button class="button">50%</button>
+              <button class="button custom-button">Custom</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="input-label">
+              <label for="people">Number of People</label>
+            </div>
+            <div class="input-container">
+              <img src="./images/icon-person.svg" />
+              <input type="number" name="people" class="bill-input" />
+            </div>
+          </div>
+        </div>
+
+        <div class="rows">
+          <div class="field-row">
+            <div class="">
+              <div class="heading">Tip Amount</div>
+              <div class="sub-heading">/ person</div>
+            </div>
+
+            <div class="result">0.00</div>
+          </div>
+
+          <div class="field-row">
+            <div class="">
+              <div class="heading">Tip Amount</div>
+              <div class="sub-heading">/ person</div>
+            </div>
+
+            <div class="result">0.00</div>
+          </div>
+
+          <div>
+            <button class="reset-button">Reset</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

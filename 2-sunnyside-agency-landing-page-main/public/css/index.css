@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Barlow", sans-serif; }
+
+.desktop {
+  display: none; }
+
+.container {
+  margin: 0 auto;
+  max-width: 411px; }
+  @media screen and (min-width: 412px) {
+    .container {
+      max-width: 1440px; } }
+
+.nav-bar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: #fff;
+  align-items: center; }
+  .nav-bar .header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Fraunces", serif; }
+
+.header {
+  background-image: url("../../images/desktop/image-header.jpg");
+  position: relative;
+  height: 700px;
+  background-color: #3ebfff;
+  background-position: center;
+  background-size: cover; }
+  @media screen and (min-width: 412px) {
+    .header {
+      height: 1000px; } }
+
+.header-heading {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px; }
+  @media screen and (min-width: 412px) {
+    .header-heading {
+      top: 50%; } }
+
+@media screen and (min-width: 412px) {
+  .feature-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+.feature-section .feature-image {
+  max-width: 411px;
+  overflow: hidden; }
+  .feature-section .feature-image img {
+    width: 100%; }
+  @media screen and (min-width: 412px) {
+    .feature-section .feature-image {
+      max-width: 100%; } }
+
+.feature-section .feature-text {
+  padding: 2rem;
+  text-align: center; }
+  .feature-section .feature-text .feature-heading {
+    font-family: "Fraunces", serif;
+    color: #2f3f68;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center; }
+  .feature-section .feature-text .feature-description {
+    color: #838383;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 0 2rem 0; }
+  .feature-section .feature-text .feature-link {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2f3f68; }
+    .feature-section .feature-text .feature-link a {
+      font: inherit;
+      text-decoration: none;
+      border-bottom: 4px solid #fbf693; }
+
+.testimonial-section {
+  padding: 4rem 2rem; }
+  .testimonial-section .testimonial-heading {
+    font-family: "Fraunces", serif;
+    letter-spacing: 4px;
+    color: #bbbbbb;
+    padding: 0 0 4rem 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .testimonial-section .testimonial {
+    margin: 1rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .testimonial-section .testimonial .author-photo {
+      width: 100px; }
+      .testimonial-section .testimonial .author-photo img {
+        width: 100px;
+        border-radius: 50%; }
+    .testimonial-section .testimonial .testimonial-text {
+      color: #838383;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      line-height: 1.5;
+      padding: 1rem 0; }
+    .testimonial-section .testimonial .testimonial-author {
+      text-align: center; }
+      .testimonial-section .testimonial .testimonial-author .author-name {
+        font-family: "Fraunces", serif;
+        color: #2f3f68;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0 0 0.75rem 0; }
+      .testimonial-section .testimonial .testimonial-author .author-title {
+        color: #838383;
+        text-align: center; }
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .gallery-section img {
+    width: 100%; }
+
+.footer-s {
+  background-color: #96D3B6; }

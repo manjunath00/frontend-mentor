@@ -1,0 +1,12 @@
+{
+  "name": "frontend-mentor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "node-sass -w sass -o public/css"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
