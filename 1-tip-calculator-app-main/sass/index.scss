@@ -13,6 +13,12 @@ button {
   border: none;
 }
 
+:root {
+  --white: #ffffff;
+  --light-blue: #416466;
+  --light-green: #00474b;
+}
+
 .app {
   background-color: #c5e4e7;
 
@@ -29,28 +35,29 @@ button {
   padding: 4rem;
   font-size: 24px;
   font-weight: bold;
-  color: #416466;
+  color: var(--light-blue);
   letter-spacing: 6px;
+  width: 100%;
 }
 
 .container {
   padding: 2rem;
   background-color: #ffffff;
   border-radius: 25px;
-  @media screen and (min-width: 412px) {
+  @media screen and (min-width: 1000px) {
     width: 900px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 2rem;
   }
 }
 
 .calculation {
   @media screen and (min-width: 412px) {
     width: 360px;
-    margin: 0 1rem 0 0;
+    margin: 0 auto;
   }
 }
 
@@ -76,7 +83,7 @@ button {
   outline: 0;
   border: none;
   text-align: right;
-  color: #00474b;
+  color: var(--light-green);
   font-weight: bold;
   font-size: 24px;
   outline: 2px solid transparent;
@@ -84,7 +91,6 @@ button {
   @media screen and (min-width: 412px) {
     padding: 0.5rem;
   }
-
 }
 
 .input-container {
@@ -104,7 +110,6 @@ button {
 
   @media screen and (min-width: 412px) {
     grid-template-columns: repeat(3, 110px);
-    // grid-gap: 10px;
   }
 }
 
@@ -112,8 +117,8 @@ button {
   padding: 0.5rem 2rem;
   margin: 0 0 10px 0;
   border: none;
-  background-color: #00474b;
-  color: #fff;
+  background-color: var(--light-green);
+  color: var(--white);
   font-weight: bold;
   font-size: 24px;
   border-radius: 6px;
@@ -133,12 +138,12 @@ button {
 
 .bill-input {
   &:focus {
-    outline-color: #00474b;
+    outline-color: var(--light-green);
   }
 }
 
 .rows {
-  background-color: #00474b;
+  background-color: var(--light-green);
   color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
@@ -146,7 +151,7 @@ button {
   @media screen and (min-width: 412px) {
     width: 420px;
     height: 420px;
-    margin: 0 0 0 1rem;
+    margin: 0 auto;
     padding: 2rem;
   }
 }
@@ -180,7 +185,7 @@ button {
   text-align: center;
   border: none;
   background-color: #26c2ad;
-  color: #00474b;
+  color: var(--light-green);
   font-size: 1.2rem;
   margin: 1rem 0 0 0;
 

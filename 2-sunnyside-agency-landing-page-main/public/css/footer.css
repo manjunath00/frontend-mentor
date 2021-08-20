@@ -1,0 +1,25 @@
+.footer-section {
+  background-color: var(--footer-bg-color);
+  padding: 2rem; }
+  .footer-section .footer-heading {
+    text-align: center;
+    color: var(--footer-heading);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin: 2rem auto 3rem auto; }
+  .footer-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; }
+  .footer-section li {
+    display: inline-block;
+    padding: 0 2rem; }
+  .footer-section .footer-nav {
+    padding: 0 2rem;
+    list-style: none;
+    color: var(--footer-nav);
+    margin: 0 0 2rem 0; }
+  .footer-section .footer-social-media {
+    margin: 5rem auto 3rem auto; }

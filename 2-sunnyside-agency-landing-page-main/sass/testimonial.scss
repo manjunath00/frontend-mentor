@@ -1,0 +1,54 @@
+.testimonial-section {
+  padding: 4rem 2rem;
+
+  .testimonial-heading {
+    letter-spacing: 4px;
+    color: var(--testi-heading);
+    padding: 0 0 4rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .testimonial {
+    margin: 1rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .author-photo {
+      width: 100px;
+
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+    }
+
+    .testimonial-text {
+      color: var(--testi-text);
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      line-height: 1.5;
+      padding: 1rem 0;
+    }
+
+    .testimonial-author {
+      text-align: center;
+      margin: 1.5rem 0;
+
+      .author-name {
+        color: var(--testi-text);
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0 0 0.75rem 0;
+      }
+
+      .author-title {
+        color: var(--testi-author-title);
+        text-align: center;
+      }
+    }
+  }
+}

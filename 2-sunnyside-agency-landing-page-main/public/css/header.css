@@ -1,0 +1,45 @@
+.container {
+  margin: 0 auto;
+  max-width: 411px; }
+  @media screen and (min-width: 412px) {
+    .container {
+      max-width: 1440px; } }
+
+.nav-bar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: var(--main-text-color);
+  align-items: center; }
+  .nav-bar .header-logo {
+    font-size: 1.5rem;
+    font-weight: bold; }
+
+.header {
+  background-image: url("../../images/desktop/image-header.jpg");
+  position: relative;
+  height: 700px;
+  background-color: var(--bg-image-color);
+  background-position: center;
+  background-size: cover; }
+  @media screen and (min-width: 412px) {
+    .header {
+      height: 1000px; } }
+
+.header-heading {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--main-text-color);
+  text-align: center;
+  letter-spacing: 4px; }
+  @media screen and (min-width: 412px) {
+    .header-heading {
+      top: 50%; } }

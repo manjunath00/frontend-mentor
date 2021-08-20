@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text-color: #fff;
+  --bg-image-color: #3ebfff;
+  --feature-heading: #2f3f68;
+  --feature-desc: #838383;
+  --border-yellow: #fbf693;
+  --testi-heading: #bbbbbb;
+  --testi-text: #5c5f66;
+  --testi-author: #273039;
+  --testi-author-title: #b0b0b0;
+  --footer-bg-color: #96d3b6;
+  --footer-heading: #2b7463;
+  --footer-nav: #549889;
+}
+
+:root {
+  --heading-font: "Fraunces", serif;
+  --text-font: "Barlow", sans-serif;
+}
+
+body {
+  font-family: var(--text-font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.desktop {
+  display: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.heading {
+  font-family: var(--heading-font);
+}
