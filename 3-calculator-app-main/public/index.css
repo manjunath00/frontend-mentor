@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Spartan", sans-serif; }
+
+/* theme 1 */
+:root {
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-bg-1: hsl(225, 21%, 49%);
+  --key-shadow-1: hsl(224, 28%, 35%);
+  --key-bg-2: hsl(6, 63%, 50%);
+  --key-shadow-2: hsl(6, 70%, 34%);
+  --key-bg-3: hsl(30%, 25%, 89%);
+  --key-shadow-3: hsl(28%, 16%, 65%);
+  --text: hsl(221, 14%, 31%);
+  --white: #ffffff; }
+
+/* Theme 2 */
+/* :root {
+    --main-bg: hsl(0, 0%, 90%);
+    --toggle-bg: hsl(0, 5%, 81%);
+    --screen-bg: hsl(0, 0, 93);
+
+    --key-bg-1: hsl(185, 42%, 37%);
+    --key-shadow-1: hsl(185, 58%, 25%);
+
+    --key-bg-2: hsl(25, 98%, 40%);
+    --key-shadow-2: hsl(25, 99%, 27%);
+
+    --key-bg-3:hsl(45, 7%, 89%);
+    --key-shadow-3:hsl(35, 11%, 61%);
+
+    --text: hsl(60, 10%, 19%);
+    --white: hsl(0, 0, 100%);
+} */
+/* Theme 3 */
+/* :root {
+    --main-bg: hsl(268, 75%, 9%);
+    --toggle-bg:  hsl(268, 71%, 12%);
+    --screen-bg: hsl(268, 71%, 12%);
+
+    --key-bg-1: hsl(281, 89%, 26%);
+    --key-shadow-1: hsl(285, 91%, 52%);
+
+    --key-bg-2: hsl(176, 100%, 44%);
+    --key-shadow-2: hsl(177, 92%, 70%);
+
+    --key-bg-3: hsl(268, 47%, 21%);
+    --key-shadow-3: hsl(290, 70%, 36%);
+
+    --text: hsl(52, 100%, 62%)
+    --white: hsl(0, 0, 100%);
+}
+ */
+body {
+  background-color: var(--main-bg);
+  color: var(--white); }
+
+.container {
+  width: 565px;
+  margin: 2rem auto;
+  border: 1px solid var(--white); }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+.theme-name {
+  text-align: right; }
+
+.switcher {
+  font-size: 0.75rem; }
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .control input[type="range"] {
+    margin-left: 1rem;
+    width: 100px;
+    height: 35px;
+    background: var(--main-bg); }
+  .control input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent; }
+  .control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--main-bg); }

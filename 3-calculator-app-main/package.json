@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "node-sass -w sass -o public/",
+    "start": "http-server ./",
+    "dev": "yarn run start && yarn run watch"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "node-sass": "^6.0.1"
+  }
+}
