@@ -6,12 +6,18 @@
     padding: 0 0 4rem 0;
     text-align: center;
     text-transform: uppercase; }
+  @media screen and (min-width: 412px) {
+    .testimonial-section .testimonial-list {
+      display: flex; } }
   .testimonial-section .testimonial {
     margin: 1rem 0 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    @media screen and (min-width: 412px) {
+      .testimonial-section .testimonial {
+        padding: 0 3rem; } }
     .testimonial-section .testimonial .author-photo {
       width: 100px; }
       .testimonial-section .testimonial .author-photo img {

@@ -1,0 +1,12 @@
+{
+  "name": "blogr-landing-page-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "node-sass -w sass/ -o public/"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

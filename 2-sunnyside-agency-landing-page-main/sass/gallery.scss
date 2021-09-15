@@ -1,6 +1,10 @@
 .gallery-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (min-width: 412px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   
     img {
       width: 100%;

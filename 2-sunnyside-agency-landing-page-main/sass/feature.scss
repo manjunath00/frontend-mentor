@@ -35,7 +35,7 @@
       font-size: 1.1rem;
       font-weight: bold;
       line-height: 1.5;
-      padding: 0 0 2rem 0;
+      padding: 0 0 0.5rem 0;
     }
 
     .feature-link {
@@ -59,7 +59,7 @@
   .feature-heading {
     font-size: 2rem;
     font-weight: bold;
-    padding: 0 0 2rem 0;
+    padding: 0 0 0.5rem 0;
 
     &:nth-child(1) {
       color: #225147;
@@ -70,11 +70,22 @@
     }
   }
 
+  .feature-card-image {
+    height: 430px;
+    overflow: hidden;
+    @media screen and (min-width: 412px) {
+      height: auto;
+    }
+  }
+  
   .feature-text-card {
     position: absolute;
-    top: 57%;
-    padding: 0 10rem;
+    top: 60%;
     color: #195470;
+    padding: 0 1rem;
+    @media screen and (min-width: 412px) {
+      padding: 0 11rem;
+    }
   }
 
 

@@ -1,0 +1,51 @@
+.header {
+  // background: url('../../images/bg-pattern-intro.svg') right no fixed cover;
+  // background-image: linear-gradient(45deg, var(--bg-lightest-red), var(--bg-light-red)), url('../images/bg-pattern-intro.svg');
+  background-image: url('../images/bg-pattern-intro.svg'), linear-gradient( var(--bg-lightest-red), var(--bg-light-red));
+  background-position: right 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  color: var(--text-white);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__nav li {
+    display: inline-block;
+  }
+}
+
+.banner {
+  text-align: center;
+  margin: 3rem 0 0 0;
+
+  &__heading {
+    font-size: 1.5rem;
+    padding: 2rem 0 2rem 0;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__subheading {
+    padding: 0 0 2rem 0;
+  }
+}
+
+.ctas {
+  button:nth-child(1) {
+    margin: 0 1rem 0 0;
+  }
+}

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: 'Ubuntu', sans-serif;
+  --secondary-font: 'Overpass', sans-serif;
+  --bg-lightest-red: hsl(13, 100%, 72%);
+  --bg-light-red: hsl(353, 100%, 62%);
+  --bg-dark-grey: hsl(237, 17%, 21%);
+  --bg-dark-blue: hsl(237, 23%, 32%);
+  --text-light-red: hsl(356, 100%, 66%);
+  --text-lightest-red: hsl(355, 100%, 74%);
+  --text-dark-blue: hsl(208, 49%, 24%);
+  --text-white: hsl(0, 0%, 100%);
+  --text-gray-blue: hsl(240, 2%, 79%);
+  --text-dark-gray-blue: hsl(207, 13%, 34%);
+  --text-dark-black-blue: hsl(240, 10%, 16%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mobile-only {
+  display: none;
+
+  @media screen and (max-width: 510px) {
+    display: block;
+  }
+}
+
+.desktop-only {
+  @media screen and (max-width: 510px) {
+    display: none;
+  }
+}
+
+body {
+  font-family: var(--primary-font);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+/* 
+Product Overview Pricing Marketplace Features Integrations Company About
+    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up A modern
+    publishing platform Grow your audience and build your online brand Start for
+    Free Learn More Designed for the future Introducing an extensible editor
+    Blogr features an exceedingly intuitive interface which lets you focus on
+    one thing: creating content. The editor supports management of multiple
+    blogs and allows easy manipulation of embeds such as images, videos, and
+    Markdown. Extensibility with plugins and themes provide easy ways to add
+    functionality or change the looks of a blog. Robust content management
+    Flexible content management enables users to easily move through posts.
+    Increase the usability of your blog by adding customized categories,
+    sections, format, or flow. With this functionality, you’re in full control.
+    State of the Art Infrastructure With reliability and speed in mind,
+    worldwide data centers provide the backbone for ultra-fast connectivity.
+    This ensures your site will load instantly, no matter where your readers
+    are, keeping your site competitive. Free, open, simple Blogr is a free and
+    open source application backed by a large community of helpful developers.
+    It supports features such as code syntax highlighting, RSS feeds, social
+    media integration, third-party commenting tools, and works seamlessly with
+    Google Analytics. The architecture is clean and is relatively easy to learn.
+    Powerful tooling Batteries included. We built a simple and straightforward
+    CLI tool that makes customization and deployment a breeze, but capable of
+    producing even the most complicated sites. Product Overview Pricing
+    Marketplace Features Integrations Company About Team Blog Careers Connect
+    Contact Newsletter LinkedIn
+
+*/

@@ -1,0 +1,22 @@
+.button {
+  border: none;
+  padding: 10px 1rem;
+  color: var(--text-white);
+  margin: 0;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__primary {
+    color: var(--bg-light-red);
+    background-color: var(--text-white);
+    border-radius: 25px;
+  }
+
+  &__outlined {
+    color: var(--text-white);
+    border: 1px solid var(--text-white);
+    background-color: var(--bg-light-red);
+    border-radius: 25px;
+  }
+}

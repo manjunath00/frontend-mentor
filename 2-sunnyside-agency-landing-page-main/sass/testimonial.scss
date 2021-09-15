@@ -9,12 +9,22 @@
     text-transform: uppercase;
   }
 
+  .testimonial-list {
+    @media screen and (min-width: 412px) {
+      display: flex;
+    }
+  }
+
   .testimonial {
     margin: 1rem 0 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 412px) {
+      padding: 0 3rem;
+    }
 
     .author-photo {
       width: 100px;
