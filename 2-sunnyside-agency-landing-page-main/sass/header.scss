@@ -4,6 +4,9 @@
 
   @media screen and (min-width: 412px) {
     max-width: 1440px;
+    .mobile {
+      display: none;
+    }
   }
 }
 
@@ -33,6 +36,18 @@
   @media screen and (min-width: 412px) {
     height: 1000px;
   }
+
+  .desktop .nav-link {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem 2rem;
+
+    &:hover {
+      color: var(--feature-heading);
+      background-color: var(--main-text-color);
+      border-radius: 30px;
+    }
+  }
 }
 
 .header-heading {
@@ -48,6 +63,6 @@
   letter-spacing: 4px;
 
   @media screen and (min-width: 412px) {
-    top: 50%;
+    top: 30%;
   }
 }

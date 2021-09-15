@@ -3,7 +3,9 @@
   max-width: 411px; }
   @media screen and (min-width: 412px) {
     .container {
-      max-width: 1440px; } }
+      max-width: 1440px; }
+      .container .mobile {
+        display: none; } }
 
 .nav-bar {
   background-size: cover;
@@ -28,6 +30,14 @@
   @media screen and (min-width: 412px) {
     .header {
       height: 1000px; } }
+  .header .desktop .nav-link {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem 2rem; }
+    .header .desktop .nav-link:hover {
+      color: var(--feature-heading);
+      background-color: var(--main-text-color);
+      border-radius: 30px; }
 
 .header-heading {
   position: absolute;
@@ -42,4 +52,4 @@
   letter-spacing: 4px; }
   @media screen and (min-width: 412px) {
     .header-heading {
-      top: 50%; } }
+      top: 30%; } }
