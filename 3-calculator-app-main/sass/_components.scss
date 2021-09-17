@@ -1,8 +1,6 @@
 body {
   background-color: var(--main-bg);
-  color: var(--white);
 }
-
 .container {
   width: 565px;
   margin: 2rem auto;
@@ -48,7 +46,7 @@ body {
     width: 100%;
     border-radius: 15px;
     cursor: pointer;
-    background: var(--toggle-bg);
+    background: var(--keypad-bg);
     padding: 5px;
   }
 
@@ -64,7 +62,7 @@ body {
 
 .display {
   font-size: 2rem;
-  background: var(--toggle-bg);
+  background: var(--display-bg);
   padding: 1.5rem 1rem;
   margin: 1rem 0;
   text-align: right;
@@ -75,20 +73,20 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  background: var(--screen-bg);
+  background: var(--keypad-bg);
   padding: 3rem 1.5rem;
   border-radius: 11px;
 
   .key {
     text-align: center;
     padding: 15px;
-    background: var(--key-bg-3);
+    background: var(--key-bg-primary);
     border-radius: 5px;
     font-size: 1.75rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 0px -1px var(--key-shadow-1);
+    box-shadow: 0 4px 0px -1px var(--key-shadow-primary);
 
     &:active {
       position: relative;
@@ -102,14 +100,14 @@ body {
   }
 
   .special-key-1 {
-    background: var(--key-bg-1);
-    box-shadow: 0 4px 0px -1px var(--key-shadow-3);
+    background: var(--key-bg-tertiary);
+    box-shadow: 0 4px 0px -1px var(--key-shadow-tertiary);
     color: var(--white);
   }
   .special-key-2 {
-    background: var(--key-bg-2);
+    background: var(--key-bg-secondary);
+    box-shadow: 0 4px 0px -1px var(--key-shadow-secondary);
     color: var(--white);
-    box-shadow: 0 4px 0px -1px var(--key-shadow-2);
   }
 
   .full-length-key:nth-of-type(odd) {
