@@ -6,6 +6,7 @@ body {
 .container {
   width: 565px;
   margin: 2rem auto;
+  color: var(--text);
   //   border: 1px solid var(--white);
 }
 
@@ -64,35 +65,49 @@ body {
   margin: 1rem 0;
   text-align: right;
   border-radius: 11px;
+  color: var(--text);
 }
 
 .key-pad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  background: var(--toggle-bg);
+  background: var(--screen-bg);
   padding: 3rem 1.5rem;
   border-radius: 11px;
 
   .key {
     text-align: center;
     padding: 15px;
-    background: var(--white);
+    background: var(--key-bg-3);
     color: var(--text);
     border-radius: 5px;
     font-size: 1.75rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
+    box-shadow: 0 4px 0px -1px var(--key-shadow-1);
+
+    &:active {
+      position: relative;
+      top: 1px;
+      left: 1px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .special-key-1 {
     background: var(--key-bg-1);
     color: var(--white);
+    box-shadow: 0 4px 0px -1px var(--key-shadow-3);
   }
   .special-key-2 {
     background: var(--key-bg-2);
     color: var(--white);
+    box-shadow: 0 4px 0px -1px var(--key-shadow-2);
   }
 
   .full-length-key:nth-of-type(odd) {
