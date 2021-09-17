@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca&display=swap");
+
+:root {
+  --primary-font: "Lexend Deca", sans-serif;
+  --secondary-font: "Big Shoulders Display", cursive;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  height: 600px;
+  margin: 3rem auto;
+  font-family: var(--primary-font);
+  display: flex;
+}
+
+.column {
+  max-width: calc(100% / 3);
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 3rem;
+}
+
+.logo {
+  margin: 0 0 2rem 0;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--white);
+  font-family: var(--secondary-font);
+  margin: 2rem 0;
+}
+
+.description {
+  margin: 2rem 0;
+  max-width: 85%;
+  font-size: 12px;
+  line-height: 1.7rem;
+  /*   text-align: justify; */
+}
+
+.button {
+  margin: 3rem 0;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: none;
+  font-family: var(--primary-font);
+  border: 2px solid var(--white);
+}
+
+.button:hover {
+  color: var(--white);
+}
+
+.button__sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.button__sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.button__suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.button__suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.button__luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.button__luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.column:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  @media screen and (max-width: 515px) {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.column:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.column:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  @media screen and (max-width: 515px) {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .container {
+    width: 90%;
+    height: 100%;
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}
