@@ -10,6 +10,7 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "latest",
+    "parcel-bundler": "latest"
   }
 }
