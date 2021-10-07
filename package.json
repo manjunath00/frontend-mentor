@@ -1,0 +1,11 @@
+{
+  "name": "Frontend-mentor-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:manjunath00/frontend-mentor.git",
+  "author": "manjunath00 <kadrimanjunath56@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node index.html"
+  }
+}
