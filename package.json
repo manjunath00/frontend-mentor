@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel src/index.html"
   },
   "devDependencies": {
     "parcel": "latest",
