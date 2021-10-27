@@ -1,5 +1,5 @@
 {
-  "name": "Frontend-mentor-challenges",
+  "name": "frontend-mentor-challenges",
   "version": "1.0.0",
   "main": "src/index.html",
   "repository": "git@github.com:manjunath00/frontend-mentor.git",
@@ -7,10 +7,11 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel",
-    "build": "parcel src/index.html"
+    "watch": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --out-dir dist"
   },
+  "dependencies": {},
   "devDependencies": {
-    "parcel": "latest",
-    "parcel-bundler": "latest"
+    "parcel-bundler": "^1.12.5"
   }
 }
